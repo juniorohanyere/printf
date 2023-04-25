@@ -23,7 +23,7 @@ int print_hex(va_list args, char buffer[],
 
 	VOID(width);
 
-	num = conver_size_unsigned(num, size);
+	num = conver_size_unsigd(num, size);
 	if (num == 0)
 		buffer[i--] = '0';
 	buffer[BUFFER_SIZE - 1] = '\0';
@@ -38,5 +38,5 @@ int print_hex(va_list args, char buffer[],
 		buffer[i--] = '0';
 	}
 	i++;
-	return (write_unsigned(0, i, buffer, flag, width, precision, size));
+	return (write_unsignd(0, i, buffer, flag, width, precision, size));
 }
