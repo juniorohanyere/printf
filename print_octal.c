@@ -34,5 +34,5 @@ int print_octal(va_list args, char buffer[],
 	if (flag & HASH && n != 0)
 		buffer[i--] = '0';
 	i++;
-	return (write_unsigd(0, i, buffer, flag, width, precision,, size));
+	return (write_unsigd(0, i, buffer, flag, width, precision, size));
 }

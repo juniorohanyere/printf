@@ -7,6 +7,7 @@
  * @args: the variable holding the list of parameters
  * @buffer: array to handle the printing of the char
  * @flag: variable to calculate the active flag
+ * @f: variable to calculate active flags
  * @width: the width to handle
  * @precision: the precision to handle
  * @size: the size of the char
