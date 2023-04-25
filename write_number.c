@@ -24,12 +24,12 @@ int write_number(int is_negative, int ind, char buffer[],
 
 	if ((flag & ZERO) && !(flag & MINUS))
 		p = '0';
-	if (is_negetive)
+	if (is_negative)
 		ch = '-';
 	else if (flag & PLUS)
 		ch = '+';
 	else if (flag & SPACE)
 		ch = ' ';
-	return (write_num(ind, buffer, flags, width, precision,
+	return (write_num(ind, buffer, flag, width, precision,
 		length, p, ch));
 }

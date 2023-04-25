@@ -22,7 +22,7 @@ int print_octal(va_list args, char buffer[],
 
 	VOID(width);
 
-	num = convert_size_unsingd(num, size);
+	num = convert_size_unsignd(num, size);
 	if (num == 0)
 		buffer[i--] = '0';
 	buffer[BUFFER_SIZE - 1] = '\0';
@@ -34,5 +34,5 @@ int print_octal(va_list args, char buffer[],
 	if (flag & HASH && n != 0)
 		buffer[i--] = '0';
 	i++;
-	return (write_unsingd(0, i, buffer, flag, width, precision, size));
+	return (write_unsignd(0, i, buffer, flag, width, precision, size));
 }

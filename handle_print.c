@@ -31,7 +31,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	};
 	for (i = 0; formats[i].fmt != '\0'; i++)
 		if (fmt[*ind] == formats[i].fmt)
-			return (formats[i].fn(list, buffer, flag, width, precision, size));
+			return (formats[i].func(list, buffer, flag, width, precision, size));
 	if (formats[i].fmt == '\0')
 	{
 		if (fmt[*ind] == '\0')

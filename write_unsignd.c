@@ -32,7 +32,7 @@ int write_unsignd(int is_negative, int ind, char buffer[],
 		buffer[--ind] = '0';
 		length++;
 	}
-	if ((flags & ZERO) && !(flags & MINUS))
+	if ((flag & ZERO) && !(flag & MINUS))
 		p = '0';
 
 	if (width > length)
@@ -42,7 +42,7 @@ int write_unsignd(int is_negative, int ind, char buffer[],
 
 		buffer[i] = '\0';
 
-		if (flags & MINUS)
+		if (flag & MINUS)
 		{
 			return (write(1, &buffer[ind], length) + write(1, &buffer[0], i));
 		}
