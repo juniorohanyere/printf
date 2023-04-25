@@ -19,7 +19,7 @@ int print_unsigned(va_list args, char buffer[],
 	int i = BUFFER_SIZE - 2;
 	unsigned long int num = va_arg(args, unsigned long int);
 
-	num = convert_size_unsigd(num, size);
+	num = convert_size_unsingd(num, size);
 
 	if (num == 0)
 		buffer[i--] = '0';
@@ -30,6 +30,6 @@ int print_unsigned(va_list args, char buffer[],
 		num /= 10;
 	}
 	i++;
-	return (write_unsigd(0, i, buffer, flag, width, precision, size));
+	return (write_unsingd(0, i, buffer, flag, width, precision, size));
 }
 

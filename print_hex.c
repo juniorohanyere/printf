@@ -5,6 +5,7 @@
  *		in lower or upper case
  *
  * @args: the variable holding the list of parameters
+ * @map_to: map a variable
  * @buffer: array to handle the printing of the char
  * @flag: variable to calculate the active flag
  * @f: variable to calculate active flags
@@ -15,7 +16,7 @@
  * Return: return the number of characters printed
 */
 
-int print_hex(va_list args, char buffer[],
+int print_hex(va_list args, char map_to[], char buffer[],
 	int flag, char f, int width, int precision, int size)
 {
 	int i = BUFFER_SIZE - 2;
@@ -24,7 +25,7 @@ int print_hex(va_list args, char buffer[],
 
 	VOID(width);
 
-	num = conver_size_unsigd(num, size);
+	num = convert_size_unsingd(num, size);
 	if (num == 0)
 		buffer[i--] = '0';
 	buffer[BUFFER_SIZE - 1] = '\0';

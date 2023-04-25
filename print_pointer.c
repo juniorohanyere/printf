@@ -17,7 +17,7 @@ int print_pointer(va_list args, char buffer[],
 	int flag, int width, int precision, int size)
 {
 	char ch = 0, p = ' ';
-	char str = "0123456789abcdef";
+	char str[] = "0123456789abcdef";
 	unsigned long n;
 	int i = BUFFER_SIZE - 2, length = 2, c = 1;
 	void *ap = va_arg(args, void *);

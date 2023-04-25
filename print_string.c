@@ -20,7 +20,7 @@ int print_string(va_list args, char buffer[],
 	char *str = va_arg(args, char *);
 
 	VOID(buffer);
-	VOID(flags);
+	VOID(flag);
 	VOID(width);
 	VOID(precision);
 	VOID(size);

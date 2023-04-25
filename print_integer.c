@@ -37,5 +37,5 @@ int print_integer(va_list args, char buffer[],
 		num /= 10;
 	}
 	i++;
-	return (write_integer(n, i, buffer, flag, width, precision, size));
+	return (write_number(n, i, buffer, flag, width, precision, size));
 }
