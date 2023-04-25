@@ -5,8 +5,8 @@
  *		  based on its type
  *
  * @fmt: the format specifier
- * @list: variable holding the list of parameters
  * @ind: the index
+ * @list: variable holding the list of parameters
  * @buffer: array to handle the print
  * @flag: variable to handle active flags
  * @width: the width to handle
@@ -16,7 +16,7 @@
  * Return: return 1 0r 2
 */
 
-int handle_print(const char *fmt, int *ind, va_list, char buffer[],
+int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	int flag, int width, int precision, int size)
 {
 	int i, length = 0;
