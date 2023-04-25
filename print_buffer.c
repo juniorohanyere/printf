@@ -4,7 +4,7 @@
  * print_buffer - function to print the contents
  *		  of the buffer if it exits
  * @buffer: array of characters
- * index: the index at which to print the next character
+ * @index: the index at which to print the next character
  *
  * Return: return nothing
 */

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - function to print a char
+ * print_binary - function to print binary numbers
  *
  * @args: the variable holding the list of parameters
  * @buffer: array to handle the printing of the char
