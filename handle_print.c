@@ -22,7 +22,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	int i, length = 0;
 	format_t formats[] = {
 		{'c', print_char}, {'s', print_string}, {'%', print_percentage},
-		{'i', print_integer}, {'d', print_octal},
+		{'i', print_integer}, {'d', print_integer},
 		{'b', print_binary},
 		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
 		{'X', print_HEXADECIMAL},
